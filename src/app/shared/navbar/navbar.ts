@@ -1,7 +1,7 @@
-import {Component, NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {MatButtonModule, MatMenuModule, MatToolbarModule, MatIconModule} from '@angular/material';
-import {RouterModule} from '@angular/router';
+import { Component, NgModule } from '@angular/core';
+import { CommonModule, NgIf } from '@angular/common';
+import { MatButtonModule, MatMenuModule, MatToolbarModule, MatIconModule } from '@angular/material';
+import { RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +9,11 @@ import {RouterModule} from '@angular/router';
   styleUrls: ['./navbar.scss']
 })
 export class NavBar {
+  constructor(private _router: Router) { }
 
+  isRoot(): boolean {
+    return this._router.url == "/";
+  }
 }
 
 @NgModule({
