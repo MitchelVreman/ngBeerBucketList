@@ -34,7 +34,7 @@
 
 <mat-sidenav-container>
 
-  <mat-sidenav #sidenav mode="over" class="app-sidenav" color="primary">
+  <!-- <mat-sidenav #sidenav mode="over" class="app-sidenav" color="primary">
     <mat-toolbar>
       <mat-toolbar-row>
         <span>Settings</span>
@@ -69,16 +69,17 @@
       </mat-toolbar-row>
 
     </mat-toolbar>
-  </mat-sidenav>
+  </mat-sidenav> -->
 
-  <mat-toolbar color="primary">
+  <!-- <mat-toolbar color="primary">
     <button mat-button class="app-menu-button" (click)="sidenav.toggle()">
       <i class="material-icons">menu</i>
     </button>
     <span class="title">Beer bucket list</span>
-  </mat-toolbar>
+  </mat-toolbar> -->
 
   <div class="app-content">
-    <app-beer-list></app-beer-list>
+    <app-navbar class="mat-elevation-z6"></app-navbar>
+    <router-outlet class="mat-drawer-content"></router-outlet>
   </div>
 </mat-sidenav-container>

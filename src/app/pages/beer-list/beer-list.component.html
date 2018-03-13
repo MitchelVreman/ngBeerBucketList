@@ -1,10 +1,10 @@
-<h2>Beer List</h2>
-
 <mat-list>
   <mat-list-item *ngFor="let b of beers">
-    <img mat-list-avatar src="{{b.imgUrl}}" alt="{{b.name}}">
+    <img mat-list-avatar src="{{b.imgUrl}}" alt="{{b.name}}" />
     <h3 mat-line>
       {{b.brewery}}: {{b.name}}
     </h3>
   </mat-list-item>
 </mat-list>
+
+<app-footer></app-footer>
