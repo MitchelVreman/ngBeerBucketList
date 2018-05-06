@@ -11,6 +11,8 @@ import { RouterModule, Router } from '@angular/router';
 export class NavBar {
   constructor(private _router: Router) { }
 
+  title : string = 'Collectables';
+
   isRoot(): boolean {
     return this._router.url == "/";
   }
