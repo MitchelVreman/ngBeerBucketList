@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { NavBar } from '../../shared/navbar/navbar';
 
 @Component({
   selector: 'app-beer-list',
+  styleUrls: ['beer-list.component.scss'],
   templateUrl: './beer-list.component.html'
 })
 export class BeerListComponent {
+
   defaultBeerImg: string = 'https://freeiconshop.com/wp-content/uploads/edd/beer-solid.png';
 
   beers: any[] = [

@@ -1,0 +1,17 @@
+// The margin between two sections
+$margin-promotion-sections: 75px;
+$margin-promotion-sections-small: 75px;
+
+.content-background {
+  overflow: hidden;
+}
+
+.content-section {
+  padding-top: $margin-promotion-sections;
+}
+
+@media (max-width: 720px) {
+  .content-section {
+    padding-top: $margin-promotion-sections-small;
+  }
+}

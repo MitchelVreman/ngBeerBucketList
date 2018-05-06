@@ -2,16 +2,16 @@
 $margin-promotion-sections: 75px;
 $margin-promotion-sections-small: 75px;
 
-.bl-header-background {
+.header-background {
   overflow: hidden;
 }
 
-.bl-header-section {
+.header-section {
   text-align: center;
   padding-top: $margin-promotion-sections;
 }
 
-.bl-header-headline {
+.header-headline {
   h1 {
     font-size: 56px;
     font-weight: 300;
@@ -27,7 +27,7 @@ $margin-promotion-sections-small: 75px;
   }
 }
 
-.bl-homepage-promo {
+.homepage-promo {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -50,36 +50,36 @@ $margin-promotion-sections-small: 75px;
 }
 
 
-.bl-homepage-row {
+.homepage-row {
   display: flex;
   max-width: 920px;
   margin: $margin-promotion-sections 0;
 }
 
-.bl-homepage-row .bl-svg-image{
+.homepage-row .svg-image{
   max-width: 90%;
 }
 
-.bl-homepage-reverse-row {
+.homepage-reverse-row {
   flex-direction: row-reverse;
 }
 
-.bl-header-start,
-.bl-homepage-bottom-start {
+.header-start,
+.homepage-bottom-start {
   text-align: center;
   margin: $margin-promotion-sections 0;
 }
 
-.bl-homepage-promo-img,
-.bl-homepage-promo-desc {
+.homepage-promo-img,
+.homepage-promo-desc {
   width: 50%;
 }
 
-.bl-homepage-promo-img {
+.homepage-promo-img {
   text-align: center;
 }
 
-.bl-homepage-promo-desc {
+.homepage-promo-desc {
   line-height: 2;
   display: flex;
   flex-direction: column;
@@ -87,16 +87,16 @@ $margin-promotion-sections-small: 75px;
 }
 
 @media (max-width: 720px) {
-  .bl-header-section {
+  .header-section {
     padding-top: $margin-promotion-sections-small;
   }
 
-  .bl-header-start,
-  .bl-homepage-bottom-start {
+  .header-start,
+  .homepage-bottom-start {
     margin: $margin-promotion-sections-small 0;
   }
 
-  .bl-homepage-row {
+  .homepage-row {
     margin: $margin-promotion-sections-small 0;
   }
 }
