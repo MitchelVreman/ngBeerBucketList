@@ -1,0 +1,29 @@
+<div class="content-background">
+  <div class="content-section">
+    <mat-card class="app-input-section">
+      <mat-card-content>
+        <h1>{{ formDefinition.title }}</h1>
+        <div *ngFor="let layout of formDefinition.layouts">
+          <div *ngFor="let field of layout.formFields">
+            <div *ngIf="field.ControlName == 'Content'">
+              <h2>{{ field.Content }}</h2>
+            </div>
+            <div *ngIf="field.ControlName == 'Textbox'">
+              <mat-form-field>
+                <input matInput [placeholder]="field.Label" [(value)]="field.Value" />
+              </mat-form-field>
+            </div>
+            <div *ngIf="field.ControlName == 'Slider'">
+              <mat-form-field class="mat-form-field--no-underline">
+                <input matInput [placeholder]="field.Label" style="display: none" >
+                <mat-slider max="5" min="0" step="1" thumbLabel tickInterval="1" [(value)]="field.Value">
+                </mat-slider>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+<app-footer></app-footer>

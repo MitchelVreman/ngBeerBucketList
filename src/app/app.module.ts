@@ -20,11 +20,13 @@ import { ROUTES } from './routes';
 import { AppComponent } from './app.component';
 import { HomepageModule } from './pages/homepage/homepage.component';
 import { BeerListComponent } from './pages/beer-list/beer-list.component';
+import { BeerTasteComponent } from './pages/beer-taste/beer-taste.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    BeerListComponent
+    BeerListComponent,
+    BeerTasteComponent
   ],
   imports: [
     BrowserModule,
